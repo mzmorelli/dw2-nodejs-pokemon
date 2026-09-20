@@ -14,7 +14,6 @@
         <th>Pokemon</th>
         <th>Nome</th>
         <th>Tipo</th>
-        <th>Nível de Evolução</th>
     </tr>
 
     <% pokemon2.forEach( pokemon2 => { %>
@@ -23,7 +22,6 @@
         <td><img class="pokemon-image" src="<%= pokemon2.img %>" alt="<%= pokemon2.nome %>"></td>
         <td><%= pokemon2.nome %></td>
         <td><%= pokemon2.tipo %></td>
-        <td><%= pokemon2.nivel %></td>
     </tr>
     <% }) %>
 </table>
