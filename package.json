@@ -1,0 +1,27 @@
+{
+  "name": "dw2-nodejs-pokemon",
+  "version": "1.0.0",
+  "description": "Atividade em Node.js para DW2.",
+  "homepage": "https://github.com/mzmorelli/dw2-nodejs-pokemon#readme",
+  "bugs": {
+    "url": "https://github.com/mzmorelli/dw2-nodejs-pokemon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzmorelli/dw2-nodejs-pokemon.git"
+  },
+  "license": "ISC",
+  "author": "mzmorelli",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,34 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+<main class="generation-page">
+<div class="page-heading">
+    <p class="eyebrow">Kanto / 001-151</p>
+    <h1>Geração 1 <span>(Pokemon Red/Blue)</span></h1>
+</div>
+
+<div class="table-shell">
+<table>
+    <tr>
+        <th>Dex</th>
+        <th>Pokemon</th>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Nível de Evolução</th>
+    </tr>
+
+    <% pokemon1.forEach(pokemon1 => { %>
+    <tr>
+        <td><%= pokemon1.dex %></td>
+        <td><img class="pokemon-image" src="<%= pokemon1.img %>" alt="<%= pokemon1.nome %>"></td>
+        <td><%= pokemon1.nome %></td>
+        <td><%= pokemon1.tipo %></td>
+        <td><%= pokemon1.nivel %></td>
+    </tr>
+    <% }) %>
+
+</table>
+</div>
+</main>
+
+<%- include ('partials/footer.ejs') %>

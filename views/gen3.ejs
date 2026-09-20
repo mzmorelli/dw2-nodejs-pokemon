@@ -1,0 +1,34 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+<main class="generation-page">
+<div class="page-heading">
+    <p class="eyebrow">Hoenn / 252-386</p>
+    <h1>Geração 3 <span>(Ruby/Sapphire)</span></h1>
+</div>
+
+<div class="table-shell">
+<table>
+    <tr>
+        <th>Dex</th>
+        <th>Pokemon</th>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Nível de Evolução</th>
+    </tr>
+
+    <% pokemon3.forEach( pokemon3 => { %>
+    <tr>
+        <td><%= pokemon3.dex %></td>
+        <td><img class="pokemon-image" src="<%= pokemon3.img %>" alt="<%= pokemon3.nome %>"></td>
+        <td><%= pokemon3.nome %></td>
+        <td><%= pokemon3.tipo %></td>
+        <td><%= pokemon3.nivel %></td>
+    </tr>
+
+    <% }) %>
+</table>
+</div>
+</main>
+
+<%- include ('partials/footer.ejs') %>
